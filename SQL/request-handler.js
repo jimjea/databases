@@ -15,7 +15,7 @@ exports.postMessage = function(req, res) {
   var resultsCallback = function (results) {
       var chat = {
         message: message.message,
-        userid: results[0].id,
+        userid: message.username,
         roomname: message.roomname
       };
 

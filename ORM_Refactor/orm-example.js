@@ -20,7 +20,7 @@ var Message = sequelize.define('Message' {
   roomname: Sequelize.STRING
 });
 
-/* .sync() makes Sequelize create the database table for us if it doesn't
+/* .sync() makes Sequelize creaste the database table for us if it doesn't
  *  exist already: */
 User.sync().success(function() {
   /* This callback function is called once sync succeeds. */
